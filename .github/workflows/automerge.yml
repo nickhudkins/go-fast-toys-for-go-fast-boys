@@ -1,8 +1,16 @@
 name: automerge
 on:
-  - pull_request
-  - pull_request_review
-  - status
+  # `check_suite` encompasses all check_runs, and we only care once they are completed
+  check_suite:
+    types: [completed]
+  # `pull_request` by default does not include labeled, so we create explicit list of activity_types
+  pull_request:
+    types: [opened, reopened, labeled, synchronize]
+  # `pull_request_review` only matters if its the submission of one
+  pull_request_review:
+    types: [submitted]
+  # `status` has no types, so we provide an empty config
+  status: {}
 jobs:
   automerge:
     runs-on: ubuntu-latest
