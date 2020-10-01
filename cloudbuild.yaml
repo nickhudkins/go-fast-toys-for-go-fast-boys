@@ -1,5 +1,5 @@
 steps:
   - name: 'alpine:3.3'
     entrypoint: 'ash'
-    args: ['-c', 'sleep 240']
+    args: ['-c', 'sleep 15']
     id: 'Go To Sleep'
