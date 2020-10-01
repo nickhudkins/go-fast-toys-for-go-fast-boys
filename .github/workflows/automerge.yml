@@ -1,5 +1,6 @@
 name: automerge
 on:
+  - pull_request
   - status
   - label
 jobs:
