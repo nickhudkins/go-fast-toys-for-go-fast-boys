@@ -1,0 +1,12 @@
+name: automerge
+on:
+  - pull_request
+  - pull_request_review
+  - check_run
+  - check_suite
+jobs:
+  automerge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: delay
+        uses: ./sleep.sh
