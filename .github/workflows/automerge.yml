@@ -1,9 +1,5 @@
 name: automerge
 on:
-  - pull_request
-  - pull_request_review
-  - check_run
-  - check_suite
   - status
   - label
 jobs:
