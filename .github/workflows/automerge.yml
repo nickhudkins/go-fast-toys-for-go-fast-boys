@@ -1,8 +1,8 @@
 name: automerge
 on:
   - pull_request
+  - pull_request_review
   - status
-  - label
 jobs:
   automerge:
     runs-on: ubuntu-latest
