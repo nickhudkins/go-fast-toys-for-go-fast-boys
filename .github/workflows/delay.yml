@@ -5,8 +5,8 @@ on:
   - check_run
   - check_suite
 jobs:
-  automerge:
+  sleep:
     runs-on: ubuntu-latest
     steps:
       - name: delay
-        uses: ./sleep.sh
+        run: sleep 15
