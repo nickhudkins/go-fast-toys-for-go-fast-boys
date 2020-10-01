@@ -4,6 +4,8 @@ on:
   - pull_request_review
   - check_run
   - check_suite
+  - status
+  - label
 jobs:
   automerge:
     runs-on: ubuntu-latest
