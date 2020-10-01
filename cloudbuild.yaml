@@ -1,0 +1,5 @@
+steps:
+  - name: 'alpine:latest'
+    entrypoint: bash
+    args: ['sleep', '15']
+    id: 'Go To Sleep'
