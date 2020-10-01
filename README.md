@@ -1,1 +1,1 @@
-GO FAST
+GO FASTer
